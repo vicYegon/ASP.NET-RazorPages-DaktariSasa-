@@ -1,0 +1,32 @@
+﻿@page
+@model Login_signupModel
+@{
+    ViewData["Title"] = "Login or Register";
+}
+
+@section Styles{
+    <link href="~/assets/css/login-signup.css" rel="stylesheet" asp-append-version="true" />
+}
+<section>
+    <div class="loginContainer">
+        <h2 class="login_header">Login</h2>
+        <div class="login_info">
+            <div class="info">
+                <p>Welcome back</p>
+            </div>
+
+            <div class="form_side">
+                <form class="login_form">
+                    <input type="text" name="email" placeholder="Email e.g someone@example.com">
+                    <input type="password" name="password" placeholder="Password">
+                </form>
+                <a href="patient.html" class="LoginBtn">Login</a>
+                <p>    -----------     Or Login with   ----------   </p>
+                <br>
+                <button class="LoginBtn">Login with Google</button>
+                <button class="LoginBtn">Login with Facebook</button>
+                <p>New to DaktariSasa?<a asp-page="/Register"> Register Here</a></p>
+            </div>
+        </div>
+    </div>
+</section>
